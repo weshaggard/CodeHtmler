@@ -74,8 +74,8 @@ static void Main(string[] args)
 							<TD width="173">Code 
 								Language&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
 							<TD><asp:dropdownlist id="ddlLanguages" runat="server"></asp:dropdownlist>&nbsp (for other  
-					language requests see the <a href="http://www.codeplex.com/CodeHtmler/Thread/View.aspx?ThreadId=19760">
-						Language Definitions Discussion</a>)</TD>
+					languages submit an issue or pull request at <a href="https://github.com/weshaggard/codehtmler">
+						CodeHtmler</a>)</TD>
 						</TR>
 						<TR>
 							<TD width="173">Type of Style</TD>
@@ -118,16 +118,11 @@ static void Main(string[] args)
 					<asp:Literal id="lblCodeHTMLerVersion" runat="server"></asp:Literal>
 					<br>
 					<hr>
-					<P>Full source code for CodeHTMLer is avaliable at 
-              <a href="http://codeplex.com/CodeHTMLer">http://codeplex.com/CodeHTMLer</a>. 
-              Post code to your weblog easier using the 
-              <a href="http://www.codeplex.com/CodeHtmler/Release/ProjectReleases.aspx?ReleaseId=9505">CodeHtmler plugin</a>
-              for <a href="http://windowslivewriter.spaces.live.com/">Windows Live Writer</a>.
-          </P>
+					<P>See source code at <a href="https://github.com/weshaggard/codehtmler">CodeHtmler</a>.</P>
 				</form>
 			</div>
 		</div></div></div>
 		<div id="footer">
-			Copyright © 2003-2008, <a href="http://weblogs.asp.net/whaggard/">Wes Haggard</a>.</div>
+			Copyright © 2003-2014, <a href="http://weblogs.asp.net/whaggard/">Wes Haggard</a>.</div>
 	</body>
 </HTML>
