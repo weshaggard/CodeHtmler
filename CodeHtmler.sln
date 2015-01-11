@@ -6,8 +6,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeHtmler", "CodeHtmler\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeHtmlerWeb", "CodeHtmlerWeb\CodeHtmlerWeb.csproj", "{02D154C0-F2F9-43D5-AC74-142EF162AD41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeHtmler.LiveWriterPlugin", "LiveWriterPlugin\CodeHtmler.LiveWriterPlugin.csproj", "{408D1DF1-5848-44AB-96EE-869FB530EAD8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,10 +20,6 @@ Global
 		{02D154C0-F2F9-43D5-AC74-142EF162AD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02D154C0-F2F9-43D5-AC74-142EF162AD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02D154C0-F2F9-43D5-AC74-142EF162AD41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{408D1DF1-5848-44AB-96EE-869FB530EAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{408D1DF1-5848-44AB-96EE-869FB530EAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{408D1DF1-5848-44AB-96EE-869FB530EAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{408D1DF1-5848-44AB-96EE-869FB530EAD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
