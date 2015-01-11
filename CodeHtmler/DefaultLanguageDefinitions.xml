@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<Languages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CodeLanguages>
+    <Language Name="C#" StyleType="InlineStyles" EscapeHtml="true" UsePreTag="false" ShowLineNumbers="false" LineNumberColor="Teal" LineNumberBackColor="" CodeBackColor="" DivInlineStyleFont="Courier New">
+      <CodeElements>
+        <CodeElement Name="whitespace" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\s+</Pattern>
+        </CodeElement>
+        <CodeElement Name="blockComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?s)/\*.*?\*/</Pattern>
+        </CodeElement>
+        <CodeElement Name="documentComment" Color="Gray" BackColor="" Bold="false" Italics="false">
+          <Pattern>///[^\r\n]*</Pattern>
+        </CodeElement>
+        <CodeElement Name="lineComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>//[^\r\n]*</Pattern>
+        </CodeElement>
+        <CodeElement Name="preprocessor" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\#(define|undef|if|elif|else|endif|line|error|warning|region|endregion)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="verbatimStringLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?s)@\"(\"\"|[^\"])*\"</Pattern>
+        </CodeElement>
+        <CodeElement Name="stringliteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\"(\\.|[^\"\\\n])*\"</Pattern>
+        </CodeElement>
+        <CodeElement Name="integerLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(0x[\dA-F]+|\d+)([ul][ul]?)?</Pattern>
+        </CodeElement>
+        <CodeElement Name="realLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(\d*\.?\d+(E[+-]?\d+)?)[FRD]?</Pattern>
+        </CodeElement>
+        <CodeElement Name="charLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\'(.|\\.{1,8})\'</Pattern>
+        </CodeElement>
+        <CodeElement Name="booleanLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(true|false)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="otherLiteral" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(null|this|base)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="builtinType" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b((bool|byte|char|decimal|double|fixed|float|int|long|object|sbyte|short|string|uint|ulong|ushort|void)\b(\?)?)</Pattern>
+        </CodeElement>
+        <CodeElement Name="keyword" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(abstract|as|break|case|catch|checked|class|const|continue|default|delegate|do|else|enum|event|explicit|extern|finally|foreach|for|get|goto|if|implicit|interface|internal|in|is|lock|namespace|new|operator|out|override|params|partial|private|protected|public|readonly|ref|return|sealed|set|sizeof|stackalloc|static|struct|switch|throw|try|typeof|unchecked|unsafe|using|virtual|volatile|while|yield)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="punctuation" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\p{P}</Pattern>
+        </CodeElement>
+        <CodeElement Name="othertext" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\w+</Pattern>
+        </CodeElement>
+        <CodeElement Name="unknownchar" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>.</Pattern>
+        </CodeElement>
+      </CodeElements>
+    </Language>
+    <Language Name="C++" StyleType="InlineStyles" EscapeHtml="true" UsePreTag="true" ShowLineNumbers="false" LineNumberColor="Teal" LineNumberBackColor="" CodeBackColor="" DivInlineStyleFont="Courier New">
+      <CodeElements>
+        <CodeElement Name="whitespace" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\s+</Pattern>
+        </CodeElement>
+        <CodeElement Name="blockComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?s)/\*.*?\*/</Pattern>
+        </CodeElement>
+        <CodeElement Name="lineComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>//[^\r\n]*</Pattern>
+        </CodeElement>
+        <CodeElement Name="preprocessor" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\#(define|undef|if|elif|else|endif|line|error|warning|region|endregion)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="stringliteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\"(\\.|[^\"\\\n])*\"</Pattern>
+        </CodeElement>
+        <CodeElement Name="integerLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(0x[\dA-F]+|\d+)([ul][ul]?)?</Pattern>
+        </CodeElement>
+        <CodeElement Name="realLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(\d*\.?\d+(E[+-]?\d+)?)[FRD]?</Pattern>
+        </CodeElement>
+        <CodeElement Name="charLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\'(.|\\.{1,8})\'</Pattern>
+        </CodeElement>
+        <CodeElement Name="booleanLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(TRUE|FALSE)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="otherLiteral" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(this)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="builtinType" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b((bool|unsigned|char|double|float|int|long|signed|wchar_t|void)\b(\?)?)</Pattern>
+        </CodeElement>
+        <CodeElement Name="keyword" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(auto|const|struct|break|continue|else|for|long|signed|switch|case|default|enum|goto|register|sizeof|typedef|volatile|do|extern|if|return|static|union|while|asm|dynamic_cast|namespace|reinterpret_cast|try|explicit|new|static_cast|typeid|catch|operator|template|typename|class|friend|private|using|const_cast|inline|public|throw|virtual|ete|mutable|protected)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="textoperators" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(and|bitand|compl|not_eq|or_eq|xor_eq|and_eq|bitor|not|or|xor)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="predefined" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(cin|endl|INT_MIN|iomanip|npos|std|cout|include|INT_MAX|iostream|MAX_RAND|NULL|string)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="punctuation" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\p{P}</Pattern>
+        </CodeElement>
+        <CodeElement Name="othertext" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\w+</Pattern>
+        </CodeElement>
+        <CodeElement Name="unknownchar" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>.</Pattern>
+        </CodeElement>
+      </CodeElements>
+    </Language>
+    <Language Name="Java" StyleType="InlineStyles" EscapeHtml="true" UsePreTag="true" ShowLineNumbers="false" LineNumberColor="Teal" LineNumberBackColor="" CodeBackColor="" DivInlineStyleFont="Courier New">
+      <CodeElements>
+        <CodeElement Name="whitespace" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\s+</Pattern>
+        </CodeElement>
+        <CodeElement Name="blockComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?s)/\*.*?\*/</Pattern>
+        </CodeElement>
+        <CodeElement Name="lineComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>//[^\r\n]*</Pattern>
+        </CodeElement>
+        <CodeElement Name="preprocessor" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\#(define|undef|if|elif|else|endif|line|error|warning|region|endregion)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="stringliteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\"(\\.|[^\"\\\n])*\"</Pattern>
+        </CodeElement>
+        <CodeElement Name="integerLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(0x[\dA-F]+|\d+)([ul][ul]?)?</Pattern>
+        </CodeElement>
+        <CodeElement Name="realLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(\d*\.?\d+(E[+-]?\d+)?)[FRD]?</Pattern>
+        </CodeElement>
+        <CodeElement Name="charLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\'(.|\\.{1,8})\'</Pattern>
+        </CodeElement>
+        <CodeElement Name="booleanLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(true|false)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="otherLiteral" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(null|this|super)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="builtinType" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b((boolean|byte|char|double|float|int|long|short|void)\b(\?)?)</Pattern>
+        </CodeElement>
+        <CodeElement Name="keyword" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(abstract|continue|for|new|switch|assert|default|goto|package|synchronized|do|if|private|break|implements|protected|throw|else|import|public|throws|case|enum|instanceof|return|transient|catch|extends|try|final|interface|static|class|finally|strictfp|volatile|const|native)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="punctuation" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\p{P}</Pattern>
+        </CodeElement>
+        <CodeElement Name="othertext" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\w+</Pattern>
+        </CodeElement>
+        <CodeElement Name="unknownchar" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>.</Pattern>
+        </CodeElement>
+      </CodeElements>
+    </Language>
+    <Language Name="Jscript" StyleType="InlineStyles" EscapeHtml="true" UsePreTag="true" ShowLineNumbers="false" LineNumberColor="Teal" LineNumberBackColor="" CodeBackColor="" DivInlineStyleFont="Courier New">
+      <CodeElements>
+        <CodeElement Name="whitespace" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\s+</Pattern>
+        </CodeElement>
+        <CodeElement Name="blockComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?s)/\*.*?\*/</Pattern>
+        </CodeElement>
+        <CodeElement Name="lineComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>//[^\n\r]*</Pattern>
+        </CodeElement>
+        <CodeElement Name="stringliteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>((\'(\\.|[^\'\\\n])*\')|(\"(\\.|[^\"\\\n])*\"))</Pattern>
+        </CodeElement>
+        <CodeElement Name="integerLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(0x[\da-fA-F]+|\d+)</Pattern>
+        </CodeElement>
+        <CodeElement Name="realLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(\d*\.?\d+([eE][+-]?\d+)?)</Pattern>
+        </CodeElement>
+        <CodeElement Name="booleanLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(true|false)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="otherLiteral" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(null|this)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="builtinType" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(boolean|byte|char|decimal|duble|float|int|long|sbyte|short|uint|ulong|ushort|void)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="keyword" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(break|case|catch|class|const|continue|debugger|default|delete|do|else|export|extends|finally|for|function|if|import|in|instanceof|new|protected|return|super|switch|throw|try|typeof|var|while|with|abstract|enum|final|get|implements|interface|internal|package|private|protected|public|set|static|assert|ensure|event|goto|invariant|namespace|native|require|synchronized|throws|transient|use|volatile)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="othertext" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\w+</Pattern>
+        </CodeElement>
+        <CodeElement Name="unknownchar" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>.</Pattern>
+        </CodeElement>
+      </CodeElements>
+    </Language>
+    <Language Name="VB.Net" StyleType="InlineStyles" EscapeHtml="true" UsePreTag="true" ShowLineNumbers="false" LineNumberColor="Teal" LineNumberBackColor="" CodeBackColor="" DivInlineStyleFont="Courier New">
+      <CodeElements>
+        <CodeElement Name="whitespace" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\s+</Pattern>
+        </CodeElement>
+        <CodeElement Name="lineComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)('|REM)[^\n\r]*</Pattern>
+        </CodeElement>
+        <CodeElement Name="stringliteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>"(\"\"|[^\"\n])*\"</Pattern>
+        </CodeElement>
+        <CodeElement Name="integerLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(&amp;H[\dA-F]+|&amp;O[0-7]+|\d+)[SIL%&amp;]?</Pattern>
+        </CodeElement>
+        <CodeElement Name="realLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(\d*\.?\d+(E[+-]?\d+)?)[FRD@!#]?</Pattern>
+        </CodeElement>
+        <CodeElement Name="charLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)\".\"C</Pattern>
+        </CodeElement>
+        <CodeElement Name="booleanLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)\b(true|false)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="dateLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)\#\s*(\d+[/-]\d+[/-]\d+)?\s*(\d+(:\d+)?\s*([AP]M)?)?\s*\#</Pattern>
+        </CodeElement>
+        <CodeElement Name="otherLiteral" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)\b(Nothing|Me|MyClass|MyBase)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="builtinType" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)\b(Assembly|Boolean|Byte|CBool|CByte|CChar|CDate|CDbl|CDec|Char|CInt|CLng|CObj|CShort|CSng|CStr|CType|Date|Decimal|Double|Object|Integer|Long|Short|Single|String|Variant|Unicode)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="keyword" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)\b(AddHandler|AddressOf|Alias|And|AndAlso|Ansi|As|Auto|ByRef|ByVal|Catch|Call|Case|Class|Const|Declare|Default|Delegate|Dim|DirectCast|Do|Each|Else|ElseIf|End|EndIf|Enum|Erase|Error|Event|Exit|Finally|For|Friend|Function|Get|GetType|GoSub|GoTo|Handles|If|Implements|Imports|In|Inherits|Interface|Is|Let|Lib|Like|Loop|Mod|Module|MustInherit|MustOverride|Namespace|New|Next|Not|Nothing|NotInheritable|NotOverridable|On|Option|Optional|Or|OrElse|Overloads|Overridable|Overrides|ParamArray|Preserve|Private|Property|Protected|Public|RaiseEvent|ReadOnly|ReDim|RemoveHandler|Resume|Return|Select|Set|Shadows|Shared|Static|Step|Stop|Structure|Sub|SyncLock|Then|Throw|To|Try|TypeOf|Until|Wend|When|While|With|WithEvents|WriteOnly|Xor)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="punctuation" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\p{P}</Pattern>
+        </CodeElement>
+        <CodeElement Name="othertext" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\w+</Pattern>
+        </CodeElement>
+        <CodeElement Name="unknownchar" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>.</Pattern>
+        </CodeElement>
+      </CodeElements>
+    </Language>
+    <Language Name="XML" StyleType="InlineStyles" EscapeHtml="true" UsePreTag="true" ShowLineNumbers="false" LineNumberColor="Teal" LineNumberBackColor="" CodeBackColor="" DivInlineStyleFont="Courier New">
+      <CodeElements>
+        <CodeElement Name="XMLwhitespace" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\s+</Pattern>
+        </CodeElement>
+        <CodeElement Name="LessThan" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>&lt;(\?)?</Pattern>
+        </CodeElement>
+        <CodeElement Name="GreaterThan" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>(\?)?&gt;</Pattern>
+        </CodeElement>
+        <CodeElement Name="OpenTag" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?&lt;=&lt;(\?)?)[^!&lt;&gt;//][^&lt;&gt;\s]+</Pattern>
+        </CodeElement>
+        <CodeElement Name="EndTag" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?&lt;=&lt;/)[^&lt;&gt;]+(?=&gt;)</Pattern>
+        </CodeElement>
+        <CodeElement Name="XMLAttribute" Color="Red" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?&lt;=&lt;[^&gt;]*\s+)[^&lt;&gt;\s]+\s*(?=\=)</Pattern>
+        </CodeElement>
+        <CodeElement Name="XMLComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?s)&lt;!\-\-.*\-\-&gt;</Pattern>
+        </CodeElement>
+        <CodeElement Name="XMLString" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?&lt;=\")(\\[^&lt;&gt;]|[^\"\\&lt;&gt;])*(?=\")</Pattern>
+        </CodeElement>
+        <CodeElement Name="XMLLiteral" Color="Red" BackColor="" Bold="false" Italics="false">
+          <Pattern>&amp;(lt|gt|amp|apos|quot);</Pattern>
+        </CodeElement>
+        <CodeElement Name="othertext" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\w+</Pattern>
+        </CodeElement>
+        <CodeElement Name="unknownchar" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>.</Pattern>
+        </CodeElement>
+      </CodeElements>
+    </Language>
+    <Language Name="Powershell" StyleType="InlineStyles" EscapeHtml="true" UsePreTag="true" ShowLineNumbers="false" LineNumberColor="Teal" LineNumberBackColor="" CodeBackColor="" DivInlineStyleFont="Courier New">
+      <CodeElements>
+        <CodeElement Name="whitespace" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\s+</Pattern>
+        </CodeElement>
+        <CodeElement Name="lineComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>\#[^\r\n]*</Pattern>
+        </CodeElement>
+        <CodeElement Name="stringliteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>((\'(`.|[^\'\n])*\')|(\"(`.|[^\"\n])*\"))</Pattern>
+        </CodeElement>
+        <CodeElement Name="integerLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(0x[\dA-F]+|\d+)([ul][ul]?)?</Pattern>
+        </CodeElement>
+        <CodeElement Name="realLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(\d*\.?\d+(E[+-]?\d+)?)[FRD]?</Pattern>
+        </CodeElement>
+        <CodeElement Name="charLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\'(.|\\.{1,8})\'</Pattern>
+        </CodeElement>
+        <CodeElement Name="keyword" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)\b(break|continue|do|for|foreach|while|if|switch|until|where|function|filter|else|elseif|in|return)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="bultinVariables" Color="#35687D" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(?&lt;=^|[^a-zA-Z_0-9])\$(Error|DebugPreference|list|PROFILE|HOME|Host|MaximumHistoryCount|MaximumAliasCount|input|StackTrace|dsTabExpansion|ReportErrorShowSource|ExecutionContext|true|VerbosePreference|ShellId|false|null|MaximumFunctionCount|ConsoleFileName|ReportErrorShowStackTrace|FormatEnumerationLimit|\?|PSHOME|MyInvocation|PWD|\^|_|ReportErrorShowExceptionClass|ProgressPreference|ErrorActionPreference|args|MaximumErrorCount|NestedPromptLevel|WhatIfPreference|OutputEncoding|ReportErrorShowInnerException|ErrorView|WarningPreference|PID|ConfirmPreference|MaximumDriveCount|MaximumVariableCount|\$)(?=[^a-zA-Z_0-9]|$)</Pattern>
+        </CodeElement>
+        <CodeElement Name="bultinCmdlets" Color="#2B91AF" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)\b(Add-Content|Add-History|Add-Member|Add-PSSnapin|Clear-Content|Clear-Item|Clear-ItemProperty|Clear-Variable|Compare-Object|ConvertFrom-SecureString|Convert-Path|ConvertTo-Html|ConvertTo-SecureString|Copy-Item|Copy-ItemProperty|Export-Alias|Export-Clixml|Export-Console|Export-Csv|ForEach-Object|Format-Custom|Format-List|Format-Table|Format-Wide|Get-Acl|Get-Alias|Get-AuthenticodeSignature|Get-ChildItem|Get-Command|Get-Content|Get-Credential|Get-Culture|Get-Date|Get-EventLog|Get-ExecutionPolicy|Get-Help|Get-History|Get-Host|Get-Item|Get-ItemProperty|Get-Location|Get-Member|Get-PfxCertificate|Get-Process|Get-PSDrive|Get-PSProvider|Get-PSSnapin|Get-Service|Get-TraceSource|Get-UICulture|Get-Unique|Get-Variable|Get-WmiObject|Group-Object|Import-Alias|Import-Clixml|Import-Csv|Invoke-Expression|Invoke-History|Invoke-Item|Join-Path|Measure-Command|Measure-Object|Move-Item|Move-ItemProperty|New-Alias|New-Item|New-ItemProperty|New-Object|New-PSDrive|New-Service|New-TimeSpan|New-Variable|Out-Default|Out-File|Out-Host|Out-Null|Out-Printer|Out-String|Pop-Location|Push-Location|Read-Host|Remove-Item|Remove-ItemProperty|Remove-PSDrive|Remove-PSSnapin|Remove-Variable|Rename-Item|Rename-ItemProperty|Resolve-Path|Restart-Service|Resume-Service|Select-Object|Select-String|Set-Acl|Set-Alias|Set-AuthenticodeSignature|Set-Content|Set-Date|Set-ExecutionPolicy|Set-Item|Set-ItemProperty|Set-Location|Set-PSDebug|Set-Service|Set-TraceSource|Set-Variable|Sort-Object|Split-Path|Start-Service|Start-Sleep|Start-Transcript|Stop-Process|Stop-Service|Stop-Transcript|Suspend-Service|Tee-Object|Test-Path|Trace-Command|Update-FormatData|Update-TypeData|Where-Object|Write-Debug|Write-Error|Write-Host|Write-Output|Write-Progress|Write-Verbose|Write-Warning)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="bultinAlias" Color="#2B91AF" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)\b(ac|asnp|clc|cli|clp|clv|cpi|cpp|cvpa|diff|epal|epcsv|fc|fl|foreach|%|ft|fw|gal|gc|gci|gcm|gdr|ghy|gi|gl|gm|gp|gps|group|gsv|gsnp|gu|gv|gwmi|iex|ihy|ii|ipal|ipcsv|mi|mp|nal|ndr|ni|nv|oh|rdr|ri|rni|rnp|rp|rsnp|rv|rvpa|sal|sasv|sc|select|si|sl|sleep|sort|sp|spps|spsv|sv|tee|where|\?|write|cat|cd|clear|cp|h|history|kill|lp|ls|mount|mv|popd|ps|pushd|pwd|r|rm|rmdir|echo|cls|chdir|copy|del|dir|erase|move|rd|ren|type)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="variable" Color="#35687D" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?&lt;=^|[^a-zA-Z_0-9])\$(\w+)(?=[^a-zA-Z_0-9]|$)</Pattern>
+        </CodeElement>
+        <CodeElement Name="punctuation" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\p{P}</Pattern>
+        </CodeElement>
+        <CodeElement Name="othertext" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\w+</Pattern>
+        </CodeElement>
+        <CodeElement Name="unknownchar" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>.</Pattern>
+        </CodeElement>
+      </CodeElements>
+    </Language>
+    <Language Name="F#" StyleType="InlineStyles" EscapeHtml="true" UsePreTag="false" ShowLineNumbers="false" LineNumberColor="Teal" LineNumberBackColor="" CodeBackColor="" DivInlineStyleFont="Courier New">
+      <CodeElements>
+        <CodeElement Name="whitespace" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\s+</Pattern>
+        </CodeElement>
+        <CodeElement Name="blockComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?s)\(\*.*?\*\)</Pattern>
+        </CodeElement>
+        <CodeElement Name="documentComment" Color="Gray" BackColor="" Bold="false" Italics="false">
+          <Pattern>///[^\r\n]*</Pattern>
+        </CodeElement>
+        <CodeElement Name="lineComment" Color="Green" BackColor="" Bold="false" Italics="false">
+          <Pattern>//[^\r\n]*</Pattern>
+        </CodeElement>
+        <CodeElement Name="preprocessor" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\#(light|nowarn|R|r|i|I|define|undef|if|elif|else|endif|line|error|warning|region|endregion)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="verbatimStringLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?s)@\"(\"\"|[^\"])*\"</Pattern>
+        </CodeElement>
+        <CodeElement Name="stringliteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\"(\\.|[^\"\\\n])*\"</Pattern>
+        </CodeElement>
+        <CodeElement Name="integerLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(0x[\dA-F]+|\d+)([ul][ul]?)?</Pattern>
+        </CodeElement>
+        <CodeElement Name="realLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>(?i)(\d*\.?\d+(E[+-]?\d+)?)[FRD]?</Pattern>
+        </CodeElement>
+        <CodeElement Name="charLiteral" Color="Maroon" BackColor="" Bold="false" Italics="false">
+          <Pattern>\'(.|\\.{1,8})\'</Pattern>
+        </CodeElement>
+        <CodeElement Name="builtinType" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b((bool|byte|char|decimal|double|fixed|float|int|long|object|sbyte|short|string|uint|ulong|ushort)\b(\?)?)</Pattern>
+        </CodeElement>
+        <CodeElement Name="keyword" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>\b(abstract|and|as|assert|begin|class|default|delegate|do|done|downcast|downto|else|end|enum|exception|extern|false|finally|for|fun|function|if|in|inherit|interface|land|lazy|let|match|member|module|mutable|namespace|new|null|of|open|or|override|rec|sig|static|struct|then|to|true|try|type|val|when|inline|upcast|while|with|void|asr|land|lor|lsl|lsr|lxor|mod)\b</Pattern>
+        </CodeElement>
+        <CodeElement Name="symbolKeyword" Color="Blue" BackColor="" Bold="false" Italics="false">
+          <Pattern>(\(|\)|\[\||\|\]|\[\&lt;|\&gt;\]|-&gt;&gt;|-&gt;|&lt;-|\.|:|\||\[|\]|\#|\{|\})</Pattern>
+        </CodeElement>
+        <CodeElement Name="punctuation" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\p{P}</Pattern>
+        </CodeElement>
+        <CodeElement Name="othertext" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>\w+</Pattern>
+        </CodeElement>
+        <CodeElement Name="unknownchar" Color="" BackColor="" Bold="false" Italics="false">
+          <Pattern>.</Pattern>
+        </CodeElement>
+      </CodeElements>
+    </Language>
+  </CodeLanguages>
+</Languages>
